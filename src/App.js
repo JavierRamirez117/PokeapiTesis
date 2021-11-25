@@ -46,9 +46,10 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (!searching) {
-      fetchPokemons();
-    }
+    console.log(searching);
+    // if (!searching) {
+      // fetchPokemons();
+    // }
   }, [page]);
 
   const updateFavoritePokemons = (name) => {
